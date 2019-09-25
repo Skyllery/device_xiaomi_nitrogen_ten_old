@@ -39,6 +39,14 @@ sdm.debug.disable_skip_validate=1
 #Property to enable display default color mode
 vendor.display.enable_default_color_mode=0
 
+#add for dirac algo tsx 9/12
+persist.dirac.acs.controller=qem
+persist.dirac.acs.storeSettings=1
+persist.dirac.acs.ignore_error=1
+
+#set for xiaomi headset effect
+ro.audio.soundfx.dirac=true
+
 # Display Properties as per treble compliance
 vendor.gralloc.enable_fb_ubwc=1
 vendor.display.disable_skip_validate=1
