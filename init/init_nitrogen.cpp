@@ -55,25 +55,11 @@ void property_override(char const prop[], char const value[])
     property_override(vendor_prop, value);
 }
 
-static void init_setup_model_properties()
-{
-    std::ifstream fin;
-    std::string buf;
-
-    fin.open("/proc/cmdline");
-    while (std::getline(fin, buf, ' '))
-        if (buf.find("androidboot.hwc") != std::string::npos)
-            break;
-    fin.close();
-
-    if (buf.find("CN") != std::string::npos || buf.find("Global") != std::string::npos) {
-        property_override_dual("ro.product.model", "ro.vendor.product.model", "Redmi Note 5");
-    } else {
-        property_override_dual("ro.product.model", "ro.vendor.product.model",  "Redmi Note 5 Pro");
-    }
-}
-
 void vendor_load_properties()
 {
-    init_setup_model_properties();
+    std::string platform;
+
+    platform = GetProperty("ro.board.platform", "");
+    if (platform != ANDROID_TARGET)
+        return;
 }
