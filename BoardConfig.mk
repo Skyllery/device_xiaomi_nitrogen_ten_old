@@ -21,7 +21,7 @@
 # definition file).
 #
 
-DEVICE_PATH := device/xiaomi/whyred
+DEVICE_PATH := device/xiaomi/nitrogen
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := sdm660
@@ -57,8 +57,8 @@ BOARD_RAMDISK_OFFSET     := 0x01000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/xiaomi/whyred
-TARGET_KERNEL_CONFIG := whyred-perf_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/nitrogen
+TARGET_KERNEL_CONFIG := nitrogen_user_defconfig
 #TARGET_KERNEL_CLANG_COMPILE := true
 #TARGET_KERNEL_CLANG_VERSION := r328903
 
@@ -68,7 +68,7 @@ TARGET_USE_SDCLANG := true
 
 # Assert
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
-TARGET_OTA_ASSERT_DEVICE := whyred
+TARGET_OTA_ASSERT_DEVICE := nitrogen
 
 # APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
@@ -214,7 +214,7 @@ TARGET_USES_INTERACTION_BOOST := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
 
 # Releasetools
-TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_whyred
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_nitrogen
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
 # RIL
@@ -245,8 +245,8 @@ endif
 TARGET_USES_MKE2FS := true
 
 # Vendor init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_whyred
-TARGET_RECOVERY_DEVICE_MODULES := libinit_whyred
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_nitrogen
+TARGET_RECOVERY_DEVICE_MODULES := libinit_nitrogen
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
@@ -275,4 +275,4 @@ ifeq ($(HOST_OS),linux)
 endif
 
 # inherit from the proprietary version
--include vendor/xiaomi/whyred/BoardConfigVendor.mk
+-include vendor/xiaomi/nitrogen/BoardConfigVendor.mk
