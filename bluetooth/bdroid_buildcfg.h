@@ -38,10 +38,10 @@ static inline const char* BtmGetDefaultName()
     char product_model[92];
     property_get("ro.product.model", product_model, "");
 
-    if (strstr(product_model, "Redmi Note 5"))
+    if (strstr(product_model, "Mi Max 3"))
         return "Redmi Note 5";
-    if (strstr(product_model, "Redmi Note 5 Pro"))
-        return "Redmi Note 5 Pro";
+    if (strstr(product_model, "Mi Max 3"))
+        return "Mi Max 3";
 
     // Fallback to ro.product.model
     return "";
