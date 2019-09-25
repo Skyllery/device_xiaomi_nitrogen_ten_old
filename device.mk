@@ -21,7 +21,7 @@
 # definition file).
 #
 
-$(call inherit-product, vendor/xiaomi/whyred/whyred-vendor.mk)
+$(call inherit-product, vendor/xiaomi/whyred/nitrogen-vendor.mk)
 
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
@@ -35,7 +35,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := \
     framework-res
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += device/xiaomi/whyred
+PRODUCT_SOONG_NAMESPACES += device/xiaomi/nitrogen
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -185,7 +185,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint feature
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_whyred
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_nitrogen
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
@@ -282,7 +282,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.xiaomi_whyred
+    android.hardware.light@2.0-service.xiaomi_nitrogen
 
 # LiveDisplay native
 PRODUCT_PACKAGES += \
@@ -369,7 +369,7 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
-    librecovery_updater_whyred
+    librecovery_updater_nitrogen
 
 # RIL
 PRODUCT_PACKAGES += \
