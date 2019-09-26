@@ -523,4 +523,7 @@
 
     <!-- True if the firmware supports Wi-Fi link probing -->
     <bool name="config_wifi_link_probing_supported">true</bool>
+    
+    <!-- Temporary 5GHz Wifi hotspot fix until we find a way to toggle it on properly -->
+    <bool translatable="false" name="config_wifi_convert_apband_5ghz_to_any">true</bool>
 </resources>
