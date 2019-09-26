@@ -21,7 +21,7 @@
 # definition file).
 #
 
-$(call inherit-product, vendor/xiaomi/whyred/nitrogen-vendor.mk)
+$(call inherit-product, vendor/xiaomi/nitrogen/nitrogen-vendor.mk)
 
 # Vendor properties
 -include $(LOCAL_PATH)/vendor_prop.mk
