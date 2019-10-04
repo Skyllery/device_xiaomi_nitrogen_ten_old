@@ -22,20 +22,30 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
- #pragma push_macro("PROPERTY_VALUE_MAX") 
-
-#include <cutils/properties.h>
+#include <stdint.h>
 #include <string.h>
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+int property_get(const char *key, char *value, const char *default_value);
+#ifdef __cplusplus
+}
+#endif
 
 static inline const char* BtmGetDefaultName()
 {
-    char product_model[PROPERTY_VALUE_MAX];
+    char product_model[92];
     property_get("ro.product.model", product_model, "");
+
+    if (strstr(product_model, "Mi Max 3"))
+        return "Mi Max 3";
+    if (strstr(product_model, "Mi Max 3"))
+        return "Mi Max 3";
 
     // Fallback to ro.product.model
     return "";
 }
-#undef PROPERTY_VALUE_MAX
 
 #define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
 #define BLUETOOTH_QTI_SW TRUE
@@ -48,7 +58,5 @@ static inline const char* BtmGetDefaultName()
 
 /* Increasing SEPs to 12 from 6 to support SHO/MCast i.e. two streams per codec */
 #define AVDT_NUM_SEPS 12
-
-#pragma pop_macro("PROPERTY_VALUE_MAX") 
 
 #endif
