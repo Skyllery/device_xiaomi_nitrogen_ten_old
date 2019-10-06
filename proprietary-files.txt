@@ -803,8 +803,8 @@ vendor/lib64/libStDrvInt.so|77f66083e7105f919c675d9c6424eabee43fca39
 vendor/lib64/libtzdrmgenprov.so|3dc9eb29ca0ec753a6e8b62560d3f46abd75edf2
 
 # DRM
-vendor/bin/hw/android.hardware.drm@1.1-service.widevine
-vendor/etc/init/android.hardware.drm@1.1-service.widevine.rc
+vendor/bin/hw/android.hardware.drm@1.2-service.widevine
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
