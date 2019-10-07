@@ -150,13 +150,7 @@ PRODUCT_PACKAGES += \
  libxml2 \
  libMiWatermark_shim \
  Snap
- 
-    android.frameworks.displayservice@1.0_32 \
-    android.hardware.camera.provider@2.4-impl:32 \
-    android.hardware.camera.provider@2.4-service \
-    libxml2 \
-    Snap
-    
+  
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService \
