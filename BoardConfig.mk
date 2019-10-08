@@ -243,8 +243,6 @@ BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 # SHIMS
 TARGET_LD_SHIM_LIBS := \
 /system/vendor/lib/hw/camera.sdm660.so|/system/vendor/lib/camera.sdm660_shim.so \
-/system/vendor/lib/libMiWatermark.so|/system/vendor/lib/libMiWatermark_shim.so \
-
 
 # Treble
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
