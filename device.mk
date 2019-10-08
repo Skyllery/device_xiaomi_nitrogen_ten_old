@@ -149,6 +149,10 @@ PRODUCT_PACKAGES += \
  android.hardware.camera.provider@2.4-service \
  libxml2 \
  Snap
+ 
+# Shims
+PRODUCT_PACKAGES += \
+    camera.sdm660_shim
   
 # ANT+
 PRODUCT_PACKAGES += \
