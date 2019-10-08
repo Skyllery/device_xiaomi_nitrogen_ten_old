@@ -760,9 +760,6 @@ vendor/lib64/vendor.qti.latency@2.0.so|5cba21a7326fdf0e827f69fefb4407cf8a887327
 # Consumerir
 vendor/lib64/hw/consumerir.default.so
 
-# VNDK
-vendor/lib/vndk/libbinder.so|094d702305c39f3988b9f586d47d4e8b10595ceb
-
 # Display calibration
 vendor/etc/qdcm_calib_data_tianma_fhd_video_dsi_panel.xml
 
