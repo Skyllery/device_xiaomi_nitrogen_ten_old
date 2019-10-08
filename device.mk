@@ -148,7 +148,6 @@ PRODUCT_PACKAGES += \
  android.hardware.camera.provider@2.4-impl:32 \
  android.hardware.camera.provider@2.4-service \
  libxml2 \
- libMiWatermark_shim \
  Snap
   
 # ANT+
@@ -377,9 +376,6 @@ PRODUCT_PACKAGES += \
     rcs_service_api \
     rcs_service_api.xml
     
-# Shims
-PRODUCT_PACKAGES += \
-    libcamera_sdm660_shim
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
