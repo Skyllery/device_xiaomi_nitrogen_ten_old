@@ -86,7 +86,11 @@ patchelf --add-needed libprocessgroup.so "$BLOB_ROOT"/vendor/lib64/hw/sound_trig
 
 "${MY_DIR}/setup-makefiles.sh"
 
+patchelf --replace-needed "libicuuc.so" "libicuuq.so" "$DEVICE_BLOB_ROOT"/vendor/lib/libMiWatermark.so
+patchelf --replace-needed "libminikin.so" "libminiq.so" "$DEVICE_BLOB_ROOT"/vendor/lib/libMiWatermark.so
+patchelf --set-soname "libicuuq.so" "$DEVICE_BLOB_ROOT"/vendor/lib/libicuuc.so
+patchelf --set-soname "libminiq.so" "$DEVICE_BLOB_ROOT"/vendor/lib/libminikin.so
+
 # Load camera.sdm660.so shim
 CAM_SDM660="$DEVICE_BLOB_ROOT"/vendor/lib/hw/camera.sdm660.so
 patchelf --add-needed camera.sdm660_shim.so "$CAM_SDM660"
-patchelf --replace-needed libMiWatermark.so libMiWatermark_shim.so "$CAM_SDM660" 
