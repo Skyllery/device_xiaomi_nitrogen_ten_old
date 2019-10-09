@@ -150,7 +150,7 @@ PRODUCT_PACKAGES += \
  libxml2 \
  Snap
  
-# Shims
+# Shims 
 PRODUCT_PACKAGES += \
     camera.sdm660_shim
   
