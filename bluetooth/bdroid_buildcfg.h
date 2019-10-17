@@ -35,7 +35,7 @@ static inline const char* BtmGetDefaultName()
     if (strstr(product_model, "Mi Max 3"))
         return "Mi Max 3";
     if (strstr(product_model, "Mi Max 3"))
-        return "Mi Max 3";
+        return "Mi Max3";
 
     // Fallback to ro.product.model
     return "";
