@@ -17,6 +17,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_nitrogen.mk
     
 COMMON_LUNCH_CHOICES := \
-    aosip_nitrogen-user \
-    aosip_nitrogen-userdebug \
-    aosip_nitrogen-eng
+    aosp_nitrogen-user \
+    aosp_nitrogen-userdebug \
+    aosp_nitrogen-eng
