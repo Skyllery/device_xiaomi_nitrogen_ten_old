@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosip_nitrogen.mk
+    $(LOCAL_DIR)/aicp_nitrogen.mk
     
 COMMON_LUNCH_CHOICES := \
-    aosip_nitrogen-user \
-    aosip_nitrogen-userdebug \
-    aosip_nitrogen-eng
+    aicp_nitrogen-user \
+    aicp_nitrogen-userdebug \
+    aicp_nitrogen-eng
