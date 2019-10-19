@@ -29,9 +29,9 @@ $(call inherit-product, device/xiaomi/nitrogen/device.mk)
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
 # Inherit some common AOSiP stuff.
-$(call inherit-product, vendor/aosip/config/common_full_phone.mk)
+$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 
-PRODUCT_NAME := aosip_nitrogen
+PRODUCT_NAME := aicp_nitrogen
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := nitrogen
 PRODUCT_MANUFACTURER := Xiaomi
